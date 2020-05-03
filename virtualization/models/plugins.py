@@ -11,4 +11,11 @@ class Plugins(models.Model):
     settings = models.TextField()
     attrs = models.TextField()
 
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = "Plugin"
+        verbose_name_plural = "Plugins"
+
 

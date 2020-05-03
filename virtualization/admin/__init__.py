@@ -2,8 +2,8 @@ from .configs import ConfigsAdmin
 from .containers import ContainersAdmin
 from .images import ImagesAdmin
 from .networks import NetworksAdmin
-from .plugins import PluginsAdmin
-from .secrets import SecretsAdmin
-from .services import ServicesAdmin
-from .swarm import SwarmAdmin
+#from .plugins import PluginsAdmin
+#from .secrets import SecretsAdmin
+#from .services import ServicesAdmin
+#from .swarm import SwarmAdmin
 from .volumes import VolumesAdmin

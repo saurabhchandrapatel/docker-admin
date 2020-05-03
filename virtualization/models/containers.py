@@ -1,5 +1,5 @@
 from django.db import models
-from virtualization.models import Images
+from .images import Images
 
 class Containers(models.Model):
     """docstring for Images"""
@@ -9,6 +9,13 @@ class Containers(models.Model):
     labels = models.CharField(max_length=100)
     name = models.UUIDField(max_length=100)
     short_id = models.CharField(max_length=15)
-    status = models.SmallIntegerField(max_length=100)
+    status = models.SmallIntegerField()
     attrs = models.TextField(max_length=100)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = "Container"
+        verbose_name_plural = "Containers"
    

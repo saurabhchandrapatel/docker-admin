@@ -2,8 +2,8 @@ from .configs import ConfigsFrom
 from .containers import ContainersFrom
 from .images import ImagesFrom
 from .networks import NetworksFrom
-from .plugins import PluginsFrom
 from .secrets import SecretsFrom
 from .services import ServicesFrom
 from .swarm import SwarmFrom
 from .volumes import VolumesFrom
+from .plugins import PluginsFrom

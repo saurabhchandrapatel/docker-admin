@@ -1,8 +1,9 @@
 from .forms import Form
 from virtualization.models import Services
 
-class ServicesForm(models.Model):
-    """docstring for Images"""
+
+
+class ServicesForm(Form):
     class Meta:
         model = Services
-        fields = __all__
+        fields = '__all__'

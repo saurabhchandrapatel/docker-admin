@@ -4,8 +4,7 @@ from virtualization.models import Secrets
 
 
 
-class SecretsForm(models.Model):
-    """docstring for Images"""
+class SecretsForm(Form):
     class Meta:
         model = Secrets
-        fields = __all__
+        fields = '__all__'

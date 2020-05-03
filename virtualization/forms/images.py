@@ -2,8 +2,7 @@ from .forms import Form
 from virtualization.models import Images
 
 
-class ImagesFrom(models.Model):
-    """docstring for Images"""
+class ImagesFrom(Form):
     class Meta:
         model = Images
-        fields = __all__
+        fields = '__all__'

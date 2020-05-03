@@ -2,9 +2,7 @@ from .forms import Form
 
 from virtualization.models import Plugins
 
-
-class PluginsForm(models.Model):
-    """docstring for Images"""
+class PluginsForm(Form):
     class Meta:
         model = Plugins
-        fields = __all__
+        fields = '__all__'

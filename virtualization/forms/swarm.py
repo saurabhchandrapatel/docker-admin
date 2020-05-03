@@ -2,8 +2,7 @@ from .forms import Form
 from virtualization.models import Swarm
 
 
-class SwarmForm(models.Model):
-    """docstring for Images"""
+class SwarmForm(Form):
     class Meta:
         model = Swarm
-        fields = __all__
+        fields = '__all__'
